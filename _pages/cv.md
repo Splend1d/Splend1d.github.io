@@ -7,7 +7,9 @@ redirect_from:
   - /resume
 ---
 
-<object class="cv-embed" data="/files/chan-jan-hsu-cv.pdf" type="application/pdf">
+{% include base_path %}
+
+<object class="cv-embed" data="{{ base_path }}/files/chan-jan-hsu-cv.pdf" type="application/pdf">
   <p>The CV PDF is not available yet. Add the file at <code>files/chan-jan-hsu-cv.pdf</code> and it will appear embedded here.</p>
 </object>
 

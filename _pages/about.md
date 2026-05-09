@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an incoming Ph.D. student at Carnegie Mellon University, where I will join the <a href="https://www.lab-msp.com/">Multimodal Speech Processing (MSP) Laboratory</a> under the supervision of Professor Carlos Busso.
+I am an incoming Ph.D. student at the Language Technologies Institute, Carnegie Mellon University, where I will join the <a href="https://www.lab-msp.com/">Multimodal Speech Processing (MSP) Laboratory</a> under the supervision of Professor Carlos Busso.
 
 Before joining CMU, I worked at MediaTek Research as a Research Scientist, working on large language models and spoken systems.
 
