@@ -23,7 +23,7 @@ repository               : "Splend1d/Splend1d.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "chan-jan-hsu.jpeg"
+  avatar           : "chan-jan-hsu.jpeg?v=2"
   name             : "Chan-Jan Hsu"
   pronouns         : # example: "she/her"  
   bio              : "Incoming PhD Student @ CMU"
