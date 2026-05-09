@@ -5,32 +5,128 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+You can also find my latest publications on <a href="https://scholar.google.com/citations?user=1yS6IHEAAAAJ">Google Scholar</a>.
 
-{% include base_path %}
+<ul class="publication-list">
+  <li>
+    <strong>On the Fallacy of Global Token Perplexity in Spoken Language Model Evaluation</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Liang-Hsuan Tseng, Yi-Cheng Lin, Yen-Chun Kuo, Ju-Chieh Chou, Kai-Wei Chang, Hung-Yi Lee, Carlos Busso<br>
+    Findings of ACL 2026
+    [<a href="https://arxiv.org/abs/2601.06329">paper</a>]
+  </li>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  <li>
+    <strong>Let's Fuse Step by Step: A Generative Fusion Decoding Algorithm with LLMs for Robust and Instruction-Aware ASR and OCR</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Yi-Chang Chen, Feng-Ting Liao, Pei-Chen Ho, Yu-Hsiang Wang, Po-Chun Hsu, Da-shan Shiu<br>
+    Findings of ACL 2025
+    [<a href="https://aclanthology.org/2025.findings-acl.1281/">paper</a>]
+    [<a href="https://github.com/mtkresearch/generative-fusion-decoding">code</a>]
+  </li>
 
+  <li>
+    <strong>A Self-Refining Framework for Enhancing ASR Using TTS-Synthesized Data</strong><br>
+    Cheng-Kang Chou*, <strong>Chan-Jan Hsu</strong>*, Ho-Lam Chung, Liang-Hsuan Tseng, Hsi-Chun Cheng, Yu-Kuan Fu, Kuan-Po Huang, Hung-Yi Lee<br>
+    ASRU 2025
+    [<a href="https://arxiv.org/abs/2506.11130">paper</a>]
+  </li>
 
+  <li>
+    <strong>Enhancing Function-Calling Capabilities in LLMs: Strategies for Prompt Formats, Data Integration, and Multilingual Translation</strong><br>
+    Yi-Chang Chen, Po-Chun Hsu, <strong>Chan-Jan Hsu</strong>, Da-shan Shiu<br>
+    NAACL Industry Track 2025
+    [<a href="https://aclanthology.org/2025.naacl-industry.9/">paper</a>]
+  </li>
 
+  <li>
+    <strong>BreezyVoice: Adapting TTS for Taiwanese Mandarin with Enhanced Polyphone Disambiguation - Challenges and Insights</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Yi-Cheng Lin, Chia-Chun Lin, Wei-Chih Chen, Ho-Lam Chung, Chen-An Li, Yi-Chang Chen, Chien-Yu Yu, Ming-Ji Lee, Chien-Cheng Chen, Ru-Heng Huang, Hung-Yi Lee, Da-Shan Shiu<br>
+    arXiv 2025
+    [<a href="https://arxiv.org/abs/2501.17790">paper</a>]
+  </li>
+
+  <li>
+    <strong>Group Think: Multiple Concurrent Reasoning Agents Collaborating at Token Level Granularity</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Davide Buffelli, Jamie McGowan, Feng-Ting Liao, Yi-Chang Chen, Sattar Vakili, Da-shan Shiu<br>
+    arXiv 2025
+    [<a href="https://arxiv.org/abs/2505.11107">paper</a>]
+  </li>
+
+  <li>
+    <strong>Zero-shot Domain-sensitive Speech Recognition with Prompt-conditioning Fine-tuning</strong><br>
+    Feng-Ting Liao, Yung-Chieh Chan, Yi-Chang Chen, <strong>Chan-Jan Hsu</strong>, Da-shan Shiu<br>
+    ASRU 2023
+    [<a href="https://arxiv.org/abs/2307.10274">paper</a>]
+  </li>
+
+  <li>
+    <strong>T5lephone: Bridging Speech and Text Self-supervised Models for Spoken Language Understanding via Phoneme level T5</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Ho-Lam Chung, Hung-Yi Lee, Yu Tsao<br>
+    ICASSP 2023
+    [<a href="https://arxiv.org/abs/2211.00586">paper</a>]
+  </li>
+
+  <li>
+    <strong>Bridging Speech and Textual Pre-trained Models with Unsupervised ASR</strong><br>
+    Jiatong Shi, <strong>Chan-Jan Hsu</strong>, Ho-Lam Chung, Dongji Gao, Paola Garcia, Shinji Watanabe, Ann Lee, Hung-Yi Lee<br>
+    ICASSP 2023
+    [<a href="https://arxiv.org/abs/2211.03025">paper</a>]
+  </li>
+
+  <li>
+    <strong>XDBERT: Distilling Visual Information to BERT from Cross-Modal Systems to Improve Language Understanding</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Hung-Yi Lee, Yu Tsao<br>
+    ACL 2022
+    [<a href="https://aclanthology.org/2022.acl-short.52/">paper</a>]
+  </li>
+
+  <li>
+    <strong>Analyzing the Robustness of Unsupervised Speech Recognition</strong><br>
+    Guan-Ting Lin*, <strong>Chan-Jan Hsu</strong>*, Da-Rong Liu, Hung-Yi Lee, Yu Tsao<br>
+    ICASSP 2022
+    [<a href="https://arxiv.org/abs/2110.03509">paper</a>]
+  </li>
+</ul>
+
+<h2>Technical Reports</h2>
+
+<ul class="publication-list">
+  <li>
+    <strong>The Breeze 2 Herd of Models: Traditional Chinese LLMs Based on Llama with Vision-Aware and Function-Calling Capabilities</strong><br>
+    MediaTek Research, <strong>Chan-Jan Hsu</strong>, Chia-Sheng Liu, Meng-Hsi Chen, Muxi Chen, Po-Chun Hsu, Yi-Chang Chen, Da-Shan Shiu<br>
+    arXiv preprint, 2025
+    [<a href="https://arxiv.org/abs/2501.13921">pdf</a>]
+  </li>
+
+  <li>
+    <strong>Building a Taiwanese Mandarin Spoken Language Model: A First Attempt</strong><br>
+    Chih-Kai Yang, Yu-Kuan Fu, Chen-An Li, Yi-Cheng Lin, Yu-Xiang Lin, Wei-Chih Chen, Ho-Lam Chung, Chun-Yi Kuan, Wei-Ping Huang, Ke-Han Lu, <strong>Chan-Jan Hsu</strong>, et al.<br>
+    arXiv preprint, 2024
+    [<a href="https://arxiv.org/abs/2411.07111">pdf</a>]
+  </li>
+
+  <li>
+    <strong>Breeze-7B Technical Report</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Chang-Le Liu, Feng-Ting Liao, Po-Chun Hsu, Yi-Chang Chen, Da-Shan Shiu<br>
+    arXiv preprint, 2024
+    [<a href="https://arxiv.org/abs/2403.02712">pdf</a>]
+    [<a href="https://www.mediatek.com/press-room/mediatek-research-introduces-breeze-7b-open-source-large-language-model">NEWS</a>]
+    [<a href="https://github.com/mtkresearch/mtkresearch">GitHub</a>]
+    [<a href="https://huggingface.co/MediaTek-Research/Breeze-7B-32k-Instruct-v1_0">HuggingFace</a>]
+  </li>
+
+  <li>
+    <strong>Advancing the Evaluation of Traditional Chinese Language Models: Towards a Comprehensive Benchmark Suite</strong><br>
+    <strong>Chan-Jan Hsu</strong>, Chang-Le Liu, Feng-Ting Liao, Po-Chun Hsu, Yi-Chang Chen, Da-Shan Shiu<br>
+    arXiv preprint, 2023
+    [<a href="https://arxiv.org/abs/2309.08448">pdf</a>]
+    [<a href="https://huggingface.co/datasets/MediaTek-Research/TCEval-v2">HuggingFace</a>]
+  </li>
+
+  <li>
+    <strong>Extending the Pre-Training of BLOOM for Improved Support of Traditional Chinese: Models, Methods and Results</strong><br>
+    Philipp Ennen, Po-Chun Hsu, <strong>Chan-Jan Hsu</strong>, Chang-Le Liu, Yen-Chen Wu, Yin-Hsiang Liao, Chin-Tung Lin, Da-Shan Shiu, Wei-Yun Ma<br>
+    arXiv preprint, 2023
+    [<a href="https://arxiv.org/abs/2303.04715">pdf</a>]
+    [<a href="https://huggingface.co/ckip-joint/bloom-3b-zh">HuggingFace</a>]
+  </li>
+</ul>
